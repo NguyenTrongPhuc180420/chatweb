@@ -82,9 +82,9 @@ io.on("connection", (socket) => {
 });
 
 app.get("/", (req, res) => {
-  res.send("askdahsgd 123");
+  res.send({ message: "hello welcome" });
 });
 const port = process.env.PORT || 3000;
-server.listen(port, () => {
+server.listen(3000, () => {
   console.log("app run on http://localhost:3000");
 });

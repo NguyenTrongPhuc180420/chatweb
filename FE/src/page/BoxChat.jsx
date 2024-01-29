@@ -40,7 +40,7 @@ function BoxChat() {
     },
   ]);
   const [name, setName] = useState("");
-  const socket = useMemo(() => io("http://localhost:3000"), [false]);
+  const socket = useMemo(() => io("https://cineflexx.site/api/"), [false]);
   const handleChange = (value) => {
     setMessage(value);
   };
